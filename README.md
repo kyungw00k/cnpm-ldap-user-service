@@ -1,7 +1,7 @@
 # cnpm-ldap-user-service
 > LDAP user service for [cnpmjs.org](https://github.com/cnpm/cnpmjs.org/wiki/Use-Your-Own-User-Authorization)
 
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+[![XO code style][xo-image]][xo-url]
 [![NPM version][npm-image]][npm-url]
 [![NPM download][npm-download]][npm-url]
 [![Gittip][gittip-image]][gittip-url]
@@ -107,5 +107,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 [npm-url]: https://npmjs.org/package/cnpm-ldap-user-service
 [npm-image]: https://img.shields.io/npm/v/cnpm-ldap-user-service.svg?style=flat-square
 [npm-download]: https://img.shields.io/npm/dm/cnpm-ldap-user-service.svg?style=flat-square
+[xo-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
+[xo-url]: https://github.com/sindresorhus/xo
 [gittip-image]: https://img.shields.io/gittip/kyungw00k.svg?style=flat-square
 [gittip-url]: https://gratipay.com/~kyungw00k/
