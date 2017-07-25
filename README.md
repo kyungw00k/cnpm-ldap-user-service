@@ -71,30 +71,32 @@ If you want to change the default, you can pass the `userMapper` function like b
 ```js
 var LdapUserService = require('cnpm-ldap-user-service');
 
-module.exports = {
-  // input your custom config here
-  admins: {
-    'admin': 'admin@cnpmjs.org'
-  },
-  // ...
-  userService: new LdapUserService({
-    url: 'ldaps://ldap.example.org:636',
-    bindDN: 'uid=myadminusername,ou=users,dc=example,dc=org',
-    bindCredentials: 'mypassword',
-    searchBase: 'ou=users,dc=example,dc=org',
-    searchFilter: '(uid={{username}})',
-    reconnect: true
-  }, (ldapUser) => {
-    // TODO: return your own authorization object using `ldapUser`
-    // TODO: (https://github.com/cnpm/cnpmjs.org/wiki/Use-Your-Own-User-Authorization)
-    return {
-      login: ldapUser.uid,
-      email: ldapUser.mail,
-      name: ldapUser.displayName,
-      site_admin: this.admins[ldapUser.uid] === ldapUser.email
-    }
-  })  
-};
+var config = {
+   // input your custom config here
+   admins: {
+     'admin': 'admin@cnpmjs.org'
+   },
+   // ...
+   userService: new LdapUserService({
+     url: 'ldaps://ldap.example.org:636',
+     bindDN: 'uid=myadminusername,ou=users,dc=example,dc=org',
+     bindCredentials: 'mypassword',
+     searchBase: 'ou=users,dc=example,dc=org',
+     searchFilter: '(uid={{username}})',
+     reconnect: true
+   }, (ldapUser) => {
+     // TODO: return your own authorization object using `ldapUser`
+     // TODO: (https://github.com/cnpm/cnpmjs.org/wiki/Use-Your-Own-User-Authorization)
+     return {
+       login: ldapUser.uid,
+       email: ldapUser.mail,
+       name: ldapUser.displayName,
+       site_admin: config.admins[ldapUser.uid] === ldapUser.mail
+     }
+   })  
+ };
+
+module.exports = config
 ```
 
 ## Contributing
