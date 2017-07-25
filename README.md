@@ -52,7 +52,7 @@ module.exports = {
 ```
 
 ## API
-`new LdapUserService(ldapConfig, admins, userMapper)`
+`new LdapUserService(ldapConfig, userMapper)`
 
 Returns: instance of `LdapUserService`
 
