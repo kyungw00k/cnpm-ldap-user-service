@@ -60,7 +60,7 @@ Returns: instance of `LdapUserService`
 - `ldapConfig`: **(required)** pass the [`LdapAuth` Config Object](https://github.com/vesse/node-ldapauth-fork#ldapauth-config-options) 
 - `userMapper`: (optional) custom user mapper function
 
-By default, internal `userMapper` bound three properties like below.  
+By default, internal `userMapper` bind three properties like below.  
 
 - `login` property is bound to `uid` attribute
 - `email` property is bound to `mail` attribute
