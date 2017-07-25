@@ -1,0 +1,27 @@
+{
+  "name": "cnpm-ldap-user-service",
+  "version": "1.0.0",
+  "description": "LDAP User Service for cnpm",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyungw00k/cnpm-ldap-user-service.git"
+  },
+  "keywords": [
+    "cnpm",
+    "ldap",
+    "user",
+    "service"
+  ],
+  "author": "Kyungwook Park",
+  "license": "MIT",
+  "dependencies": {
+    "ldapauth-fork": "^4.0.1"
+  }
+}
