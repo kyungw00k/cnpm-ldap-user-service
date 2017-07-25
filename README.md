@@ -66,7 +66,7 @@ By default, internal `userMapper` bound three properties like below.
 - `email` property is bound to `mail` attribute
 - `name` property is bound to `displayName` attribute
 
-If you want to change the rules, you can pass the `userMapper` function like below.
+If you want to change the default, you can pass the `userMapper` function like below.
 
 ```js
 var LdapUserService = require('cnpm-ldap-user-service');
