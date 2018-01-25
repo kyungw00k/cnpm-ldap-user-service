@@ -1,6 +1,6 @@
 {
   "name": "cnpm-ldap-user-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LDAP User Service for cnpm",
   "main": "index.js",
   "directories": {
